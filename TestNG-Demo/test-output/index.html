@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>E:\JAVACODE\TestingDemos\TestNG-Demo\testng-v9.xml</span>
+                    <span>E:\JAVACODE\TestingDemos\TestNG-Demo\testng-v11.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="LoanApplications.CarLoanApplicationTests" class="method navigator-link" hash-for-method="CarLoanLoginAPI">CarLoanLoginAPI</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testpkg.ParamTest" class="method navigator-link" hash-for-method="applyForLoan(will, 45)">applyForLoan(will, 45)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="LoanApplications.CarLoanApplicationTests" class="method navigator-link" hash-for-method="CarLoanLoginWeb">CarLoanLoginWeb</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testpkg.ParamTest" class="method navigator-link" hash-for-method="applyForLoan(max, 36)">applyForLoan(max, 36)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testpkg.ParamTest" class="method navigator-link" hash-for-method="applyForLoan(john, 25)">applyForLoan(john, 25)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,21 +132,31 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">LoanApplications.CarLoanApplicationTests</span>
+              <span class="class-name">testpkg.ParamTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CarLoanLoginAPI">
-                  </a> <!-- CarLoanLoginAPI -->
-                  <span class="method-name">CarLoanLoginAPI</span>
+                  <a name="applyForLoan(will, 45)">
+                  </a> <!-- applyForLoan(will, 45) -->
+                  <span class="method-name">applyForLoan</span>
+                  <span class="parameters">(will, 45)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="CarLoanLoginWeb">
-                  </a> <!-- CarLoanLoginWeb -->
-                  <span class="method-name">CarLoanLoginWeb</span>
+                  <a name="applyForLoan(max, 36)">
+                  </a> <!-- applyForLoan(max, 36) -->
+                  <span class="method-name">applyForLoan</span>
+                  <span class="parameters">(max, 36)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyForLoan(john, 25)">
+                  </a> <!-- applyForLoan(john, 25) -->
+                  <span class="method-name">applyForLoan</span>
+                  <span class="parameters">(john, 25)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,16 +164,17 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\JAVACODE\TestingDemos\TestNG-Demo\testng-v9.xml</span>
+            <span class="header-content">E:\JAVACODE\TestingDemos\TestNG-Demo\testng-v11.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;URL&quot; value=&quot;google.com&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;SmokeTests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;LoanApplications.CarLoanApplicationTests&quot;/&gt;
+      &lt;class name=&quot;testpkg.ParamTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SmokeTests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -198,20 +214,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CarLoanLoginWeb')
-data.setCell(0, 2, 'LoanApplications.CarLoanApplicationTests')
-data.setCell(0, 3, 19);
+data.setCell(0, 1, 'applyForLoan')
+data.setCell(0, 2, 'testpkg.ParamTest')
+data.setCell(0, 3, 12);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CarLoanLoginAPI')
-data.setCell(1, 2, 'LoanApplications.CarLoanApplicationTests')
-data.setCell(1, 3, 9);
+data.setCell(1, 1, 'applyForLoan')
+data.setCell(1, 2, 'testpkg.ParamTest')
+data.setCell(1, 3, 8);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'applyForLoan')
+data.setCell(2, 2, 'testpkg.ParamTest')
+data.setCell(2, 3, 5);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 ms</span>
+              <span class="suite-total-time">Total running time: 25 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -226,16 +246,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">LoanApplications.CarLoanApplicationTests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">CarLoanLoginMobile</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -244,14 +257,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">LoanApplications.CarLoanApplicationTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testpkg.ParamTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">CarLoanLoginWeb</span>
+                <span class="method-name">applyForLoan(john, 25)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">CarLoanLoginAPI</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-name">applyForLoan(max, 36)</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">applyForLoan(will, 45)</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

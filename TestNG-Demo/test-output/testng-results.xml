@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-28T09:34:18 IST" name="Suite" finished-at="2022-09-28T09:34:18 IST" duration-ms="113">
+  <suite started-at="2022-09-28T10:02:05 IST" name="Suite" finished-at="2022-09-28T10:02:05 IST" duration-ms="127">
     <groups>
     </groups>
-    <test started-at="2022-09-28T09:34:18 IST" name="SmokeTests" finished-at="2022-09-28T09:34:18 IST" duration-ms="113">
-      <class name="LoanApplications.CarLoanApplicationTests">
-        <test-method signature="CarLoanLoginWeb()[pri:0, instance:LoanApplications.CarLoanApplicationTests@524d6d96]" started-at="2022-09-28T09:34:18 IST" name="CarLoanLoginWeb" finished-at="2022-09-28T09:34:18 IST" duration-ms="19" status="PASS">
+    <test started-at="2022-09-28T10:02:05 IST" name="SmokeTests" finished-at="2022-09-28T10:02:05 IST" duration-ms="127">
+      <class name="testpkg.ParamTest">
+        <test-method signature="applyForLoan(java.lang.String,int)[pri:0, instance:testpkg.ParamTest@d6e7bab]" started-at="2022-09-28T10:02:05 IST" name="applyForLoan" data-provider="getData" finished-at="2022-09-28T10:02:05 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CarLoanLoginWeb -->
-        <test-method signature="CarLoanLoginAPI()[pri:0, instance:LoanApplications.CarLoanApplicationTests@524d6d96]" started-at="2022-09-28T09:34:18 IST" name="CarLoanLoginAPI" finished-at="2022-09-28T09:34:18 IST" depends-on-methods="LoanApplications.CarLoanApplicationTests.CarLoanLoginWeb" duration-ms="9" status="PASS">
+        </test-method> <!-- applyForLoan -->
+        <test-method signature="applyForLoan(java.lang.String,int)[pri:0, instance:testpkg.ParamTest@d6e7bab]" started-at="2022-09-28T10:02:05 IST" name="applyForLoan" data-provider="getData" finished-at="2022-09-28T10:02:05 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[max]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[36]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CarLoanLoginAPI -->
-      </class> <!-- LoanApplications.CarLoanApplicationTests -->
+        </test-method> <!-- applyForLoan -->
+        <test-method signature="applyForLoan(java.lang.String,int)[pri:0, instance:testpkg.ParamTest@d6e7bab]" started-at="2022-09-28T10:02:05 IST" name="applyForLoan" data-provider="getData" finished-at="2022-09-28T10:02:05 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[will]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForLoan -->
+      </class> <!-- testpkg.ParamTest -->
     </test> <!-- SmokeTests -->
   </suite> <!-- Suite -->
 </testng-results>
